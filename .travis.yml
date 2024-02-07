@@ -10,7 +10,4 @@ script:
   # Использование декодированной переменной
   - echo 'Decoded variable value:' "$DECRYPTED_VARIABLE"
   - echo 'Decoded SOME_VAR value:' "$SOME_VAR"
-
-before_install:
-  # Декодирование зашифрованной переменной и сохранение в переменную окружения
-  - DECRYPTED_VARIABLE=$(echo "$SOME_VAR" | base64 -d)
+  - echo 'testing:' '"$SOME_VAR" | base64 -d'
