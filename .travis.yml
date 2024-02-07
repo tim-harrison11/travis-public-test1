@@ -1,7 +1,13 @@
-lang: ruby
-os: linux
-dist: focal
-jobs:
-  include:
-    - stage: test1
-      script: echo -e "testing 1"
+language: python
+python:
+  - "3.8"
+
+env:
+  global:
+    secure: a37MxFPeIg1A2qaAXpNV3cwoMwLn1PrqpzYvkT+2EN+DMB5od7Mb8+ZWexNYrfMTK3qsvTpuzhMWFdY6cq1Fv9j+FigCX02KKvbOjkdtrSvD2MaVK6jbSlxEBaNQ+UD55A/Tw+VKUyojkAsn4c7ZLcGXOg3HVXcnkoqLsE1N8PbRudxXI15WFONMxujkpwdzAvjnktaFjGyX34iRGBjHjaiu1E7Mi3r8tWAMquyduq3nbGXlS3iGOhbDi/DB8fQ3TmR/fS/yWIWAo8fL0DlBg5Vxlz8Au7gjCLc/FrCe4D7B7w5pyHx1DtBB/mm9aarLNiLPLX1t2ZaJ3SJgYK6C5WFXlIEFt75kSeimdzJrROTDEJA+78Wc/gQoZScA5PzqGud24c9qqr0TINYHn/XCPhdtRtDA31ZJ3WI3jxP2w5wKoowuqJhlZ8HpmaEVyKJp5jRMzBk0C+GGoDFKcxF6GfTNpp4LwTlgwqzTW3yQpEvCuEirj04LyCOHkAvh635UFPOkXHJlGhdime00REkINIMg5g3Xll5BYvVxnw7NCCtsybpmyzuNbJVPxJbEIAxYJ/5APJ/oQKe4OmfMR665B9bDfGw9ekg8ig4ser7c9alCReEYY1L8+lbcMF+pzJad5fhoLwrFipte5UqHQFrKABk8ukvBJft0+kK5uc7qjkc=
+
+script:
+  # Использование декодированной переменной
+  - echo 'Decoded variable value:' "$DECRYPTED_VARIABLE"
+  - echo 'Decoded SOME_VAR value:' "$SOME_VAR"
+  - echo 'testing:' '"$SOME_VAR" | base64 -d'
