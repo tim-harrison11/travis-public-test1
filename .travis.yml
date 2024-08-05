@@ -4,4 +4,4 @@ dist: focal
 jobs:
   include:
     - stage: test1
-      script: echo -e "testing 1.."
+      script: echo -e "testing 1..."
