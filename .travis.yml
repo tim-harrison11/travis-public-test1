@@ -1,6 +1,6 @@
 os: linux
 arch: ppc64le
 dist: focal
-language: minimal
+language: java
 script:
 - echo "test"
