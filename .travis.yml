@@ -1,7 +1,6 @@
-lang: ruby
 os: linux
+arch: ppc64le
 dist: focal
-jobs:
-  include:
-    - stage: test1
-      script: echo -e "testing 1..."
+language: java
+script:
+- echo "test"
