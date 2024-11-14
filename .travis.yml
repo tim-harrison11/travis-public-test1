@@ -5,7 +5,4 @@ jobs:
   include:
     - stage: test1
       script: echo -e "testing 1..."
-    - stage: test2
-      script: echo -e "testing 2..."
-    - stage: test3
-      script: echo -e "testing 3..."
+
