@@ -1,8 +1,8 @@
 lang: ruby
 os: linux
-dist: focal
+dist: bionic
 jobs:
   include:
     - stage: test1
-      script: echo -e "testing focal..."
+      script: echo -e "testing bionic..."
 
