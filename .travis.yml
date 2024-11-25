@@ -1,8 +1,8 @@
 lang: ruby
 os: linux
-dist: bionic
+dist: jammy
 jobs:
   include:
     - stage: test1
-      script: echo -e "testing bionic..."
+      script: echo -e "testing jammy..."
 
