@@ -1,3 +1,8 @@
-os: linux
-script: echo -e "testing..." 
+lang: ruby
+ os: linux
+ dist: jammy
+ jobs:
+   include:
+     - stage: test1
+       script: echo -e "testing jammy..."
 
