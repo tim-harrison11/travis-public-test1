@@ -1,8 +1,4 @@
-lang: ruby
-os: linux
-dist: jammy
-jobs:
-  include:
-    - stage: test1
-      script: echo -e "testing jammy..."
+os: osx
+osx_image: xcode12.4
+script: echo -e "testing..."
 
