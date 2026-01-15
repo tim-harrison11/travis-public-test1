@@ -1,8 +1,7 @@
-lang: ruby
 os: linux
+language: ruby
 dist: jammy
-jobs:
-  include:
-    - stage: test1
-      script: echo -e "testing jammy..."
+script:
+- ruby -e 'puts ENV["MY_ENV"] || "Hello, World!"'
+group: stable
 
