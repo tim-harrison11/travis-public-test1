@@ -1,12 +1,13 @@
 os: linux
 dist: jammy
 vm:
+  use: image_0_0_1_0
   create:
-    name: image_0_0_1_0
+    name: image_0_0_1_1
 language: ruby
 rvm:
   - 3.3.5
 before_instal:
   - gem install rails
 script:
-- ruby -e 'puts ENV["MY_ENV"] || "Hello, World!"'
+- ruby -e 'puts ENV["MY_ENV"] || "Hello, World!!!"'
