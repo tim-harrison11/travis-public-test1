@@ -1,10 +1,10 @@
+lang: ruby
 os: linux
-dist: jammy
-vm:
-  create:
-    name: image_0_0_1_1_0_0
-before_install:
-  - sudo apt-get -y install libxml2-dev
-addons:
-  apt:
-    update: true
+dist: focal
+jobs:
+  include:
+    vm:
+      create:
+        name: image_0_0_1_1_0_0
+    - stage: test1
+      script: echo -e "testing 1..."
