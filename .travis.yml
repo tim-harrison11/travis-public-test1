@@ -1,13 +1,10 @@
 os: linux
 dist: jammy
 vm:
-  use: image_0_0_1_0
   create:
     name: image_0_0_1_1_0_0
-language: ruby
-rvm:
-  - 3.3.5
-before_instal:
-  - gem install rails
-script:
-- ruby -e 'puts ENV["MY_ENV"] || "Hello, World!!!"'
+before_install:
+  - sudo apt-get -y install libxml2-dev
+addons:
+  apt:
+    update: true
