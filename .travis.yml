@@ -3,7 +3,7 @@ dist: jammy
 vm:
   use: image_0_0_1_0
   create:
-    name: image_0_0_1_1
+    name: image_0_0_1_1_0_0
 language: ruby
 rvm:
   - 3.3.5
