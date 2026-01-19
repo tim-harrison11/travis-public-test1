@@ -1,7 +1,12 @@
-lang: ruby
 os: linux
-dist: focal
+dist: jammy
 vm:
   create:
-    name: image_0_0_1_1_0_0
-script: echo -e "testing 1..."
+    name: image_0_0_0_0_0_1
+language: ruby
+rvm:
+  - 3.3.5
+before_instal:
+  - gem install rails
+script:
+- ruby -e 'puts ENV["MY_ENV"] || "Hello, World!"'
