@@ -1,12 +1,9 @@
 os: linux
-dist: jammy
-vm:
-  create:
-    name: image_0_0_0_0_0_1
-language: ruby
-rvm:
-  - 3.3.5
-before_instal:
-  - gem install rails
-script:
-- ruby -e 'puts ENV["MY_ENV"] || "Hello, World!"'
+dist: focal
+jobs:
+  include:
+    - name: "Job to crate custom image my_custom_name_20260119_0001"
+      vm:
+        create:
+          name: my_custom_name_20260119_0001
+      script: echo "Job one"
