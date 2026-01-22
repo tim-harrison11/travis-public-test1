@@ -5,5 +5,5 @@ jobs:
     - name: "Job to crate custom image my_custom_name_20260119_0002"
       vm:
         create:
-          name: my_custom_name_20260119_0002
+          name: my_custom_name_20260122_0001
       script: echo "Job one.."
