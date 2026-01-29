@@ -1,8 +1,9 @@
-lang: ruby
 os: linux
-dist: jammy
+dist: focal
 jobs:
   include:
-    - stage: test1
-      script: echo -e "testing jammy..."
-
+    - name: "Job to crate custom image my_custom_name_20260129_0005"
+      vm:
+        create:
+          name: my_custom_name_20260129_0005
+      script: echo "Job one...."
