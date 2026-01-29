@@ -2,8 +2,8 @@ os: linux
 dist: focal
 jobs:
   include:
-    - name: "Job to crate custom image my_custom_name_20260129_0003"
+    - name: "Job to crate custom image my_custom_name_20260129_0004"
       vm:
         create:
-          name: my_custom_name_20260129_0003
-      script: echo "Job one..."
+          name: my_custom_name_20260129_0004
+      script: echo "Job one....."
