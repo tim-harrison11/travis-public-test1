@@ -4,5 +4,5 @@ dist: jammy
 jobs:
   include:
     - stage: test1
-      script: echo -e "testing jammy...."
+      script: echo -e "testing jammy......."
 
