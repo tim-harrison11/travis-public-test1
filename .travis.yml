@@ -4,5 +4,14 @@ dist: jammy
 jobs:
   include:
     - stage: test1
-      script: echo -e "testing jammy....30-july-2026..."
-
+      script: echo -e "testing job 1..."
+    - stage: test2
+      script: echo -e "testing job 2..."
+    - stage: test3
+      script: echo -e "testing job 3..."
+    - stage: test4
+      script: echo -e "testing job 4..."
+    - stage: test5
+      script: echo -e "testing job 5..."
+    - stage: test6
+      script: echo -e "testing job 6..."
