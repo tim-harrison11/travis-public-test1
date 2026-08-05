@@ -14,4 +14,4 @@ jobs:
     - stage: test5
       script: echo -e "testing job 5..."
     - stage: test6
-      script: echo -e "testing job 6..."
+      script: echo -e "testing job 6...."
